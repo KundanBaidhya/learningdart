@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 var num = 9;
-var numminus = --num;
+var numminus = num--;
 
 
 void main() {
