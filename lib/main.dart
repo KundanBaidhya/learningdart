@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-var num = 9;
-var numminus = num--;
-var name = "foo";
-String namehun = name*100;
-
-//+ - * / == % operators in dart
-
+void test(){
+  var names = ["kundan","shristi","yojana"];
+  print(names[0]);
+  print(names[2]);
+}
 void main() {
   runApp(const MyApp());
 }
@@ -17,9 +15,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your applica;0tion.
   @override
   Widget build(BuildContext context) {
-    print(num);
-    print(numminus);
-    print(namehun);
+    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
