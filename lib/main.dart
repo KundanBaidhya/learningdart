@@ -4,6 +4,8 @@ void test(){
   var names = ["kundan","shristi","yojana"];
   print(names[0]);
   print(names[2]);
+  names.add("abhishek");
+  print(names.length);
 }
 void main() {
   runApp(const MyApp());
