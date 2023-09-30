@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
 void test(){
-  //Set in dart
-  var things = {"foo","bar","baz"};
-  print(things.elementAt(0));
+  //Map in dart
+  var person = {"age":20,
+                "name":"Kundan",
+                "weight":80};
+  
+  person["name"]="Baidhya";
+  person["sex"]="M";
+  print(person["name"]);
 }
 void main() {
   runApp(const MyApp());
