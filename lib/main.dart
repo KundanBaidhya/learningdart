@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
 void test(){
-  var names = ["kundan","shristi","yojana"];
-  print(names[0]);
-  print(names[2]);
-  names.add("abhishek");
-  print(names.length);
+  //Set in dart
+  var things = {"foo","bar","baz"};
+  print(things.elementAt(0));
 }
 void main() {
   runApp(const MyApp());
