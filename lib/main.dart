@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 
 void test(){
-  //Map in dart
-  var person = {"age":20,
-                "name":"Kundan",
-                "weight":80};
-  
-  person["name"]="Baidhya";
-  person["sex"]="M";
-  print(person["name"]);
+  var names = ["aayush","yojana","kundan"];
+  print(names);
+  print("hello");
 }
 void main() {
   runApp(const MyApp());
