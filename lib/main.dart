@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 
 void test(){
+  //list
   var names = ["aayush","yojana","kundan"];
+
+  var namess = {"kundan","shristi",1};
+
+  var myvar = {"name":"Shristi","age":1};
+  print(namess);
+  print(myvar);
   print(names);
-  print("hello");
 }
 void main() {
   runApp(const MyApp());
