@@ -7,9 +7,11 @@ void test(){
   var namess = {"kundan","shristi",1};
 
   var myvar = {"name":"Shristi","age":1};
-  print(namess);
-  print(myvar);
-  print(names);
+
+  print(names[0]);
+  print(namess.elementAt(1));
+  print(myvar["age"]);
+ 
 }
 void main() {
   runApp(const MyApp());
