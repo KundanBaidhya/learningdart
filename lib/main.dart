@@ -2,32 +2,26 @@
 import 'package:flutter/material.dart';
 
 void test(){
-// 1. null safety in dart
-  String? name = null;
-  print(name);
+//condition invocation
 
-// 2. checking to see if which one is the first non value
-  String? firstName = null;
-  String? middleName = "bar";
-  String? lastName = "baz";
+List? names = null;
 
-  String notnullvalue = firstName ?? middleName ?? lastName; /* ?? is a infix operator that checks if the left value 
-                                                            is null and if not checks for the right value to be null
-                                                            and returns the not null value.*/
-  print(notnullvalue);
-
-//3. checking if a value is null or not and if yes assigning a value
-
-  String? checkname;
-  checkname ??= firstName;  /*checks if LHS is null or not and if yes
-                              assigns the value of the RHS to the LHS*/
-  checkname ??= middleName; /* checks if LHS is still null after taking the
-                              value of firstname and if yes assigns the value of middlename*/
-  checkname ??= lastName;   /* if the value of checkname is still null
-                              assigns the value of last name*/
-  print(checkname);
-
+var numOfNames1;
+if(names!=null){
+  numOfNames1 = names.length;
 }
+else{
+  numOfNames1 = 0;
+}//old way of checking if an array is null or not
+
+ var numOfNames2 = names?.length??0;
+ /*checking if the value of names is null or not
+ if no then grab the value of length and if yes
+ take the value 0*/
+ print(numOfNames1);
+ print(numOfNames2);
+}
+
 
 
 void main() {
