@@ -1,12 +1,25 @@
 
 import 'package:flutter/material.dart';
 
-//Enumerations
+//Switch is the preferred way of working with enumerations
+//Not that if else ladder is that bad
 
-enum PersonProperties { firstName, lastName, age}
-void test(){
-  print(PersonProperties.firstName);
-  print(PersonProperties.firstName.name);
+enum Animals { dog, cat, mouse}
+void test(Animals animal){
+  switch(animal){
+    case Animals.dog:
+      print("Damn dogs are wholesome");
+      break;
+
+    case Animals.cat:
+      print("Sheesh cats are meenie");
+      break;
+
+    case Animals.mouse:
+      print("Well mouse are cute, at least animated");
+      break;
+  }
+  print("Finished with switch statement");
 }
 
 
@@ -21,7 +34,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your applica;0tion.
   @override
   Widget build(BuildContext context) {
-    test();
+    test(Animals.cat);
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
