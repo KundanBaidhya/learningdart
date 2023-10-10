@@ -1,25 +1,12 @@
 
 import 'package:flutter/material.dart';
 
+//Enumerations
+
+enum PersonProperties { firstName, lastName, age}
 void test(){
-//condition invocation
-
-List? names = null;
-
-var numOfNames1;
-if(names!=null){
-  numOfNames1 = names.length;
-}
-else{
-  numOfNames1 = 0;
-}//old way of checking if an array is null or not
-
- var numOfNames2 = names?.length??0;
- /*checking if the value of names is null or not
- if no then grab the value of length and if yes
- take the value 0*/
- print(numOfNames1);
- print(numOfNames2);
+  print(PersonProperties.firstName);
+  print(PersonProperties.firstName.name);
 }
 
 
