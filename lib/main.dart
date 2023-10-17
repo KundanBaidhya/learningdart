@@ -1,25 +1,21 @@
 
 import 'package:flutter/material.dart';
 
-//classes in dart
+//constructors in dart
 class Person{
-  final firstName = "";
-  final lastName = "";
+  final String name;
+  Person(this.name); // a constructor that takes name as parameter.
 
-  void run(){
-    print("I'm running");
+  void printName(){
+    print(name);
   }
-  void breathe(){
-    print("I'm breathing");
-  }
+
 }
 
 void test(){
-  final person = Person();
-  person.breathe();
-  //general change
-  //general change
-  //general change
+  final person = Person("Kundan Baidhya");
+  person.printName();
+  
 }
 
 
