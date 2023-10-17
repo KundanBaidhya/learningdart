@@ -1,20 +1,23 @@
 
 import 'package:flutter/material.dart';
 
-//constructors in dart
-class Person{
-  final String name;
-  Person(this.name); // a constructor that takes name as parameter.
-
-  void printName(){
-    print(name);
+//Inheritance in dart
+class Animals{
+  void walk(){
+    print("Hey I'm walking paw paw paw");
   }
 
+  void eat(){
+    print("Hey I'm eating nom nom nom");
+  }
 }
 
+class Cat extends Animals{}
+
 void test(){
-  final person = Person("Kundan Baidhya");
-  person.printName();
+  final sylvie = Cat();
+  sylvie.walk();
+  sylvie.eat();
   
 }
 
