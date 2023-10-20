@@ -1,23 +1,27 @@
 
 import 'package:flutter/material.dart';
 
-//Factory constructors
 
 
+//Operators not working at class level
 
 class Cat{
-  final int age;
-  Cat(this.age);
-  factory Cat.age(){//factory constructor that returns the age of the cat-
-    return Cat(8);//as an object.
-  }
+  final String name;
+  Cat(this.name);
 }
 
 
 void test(){
   
-  final sylvie = Cat.age();//using the factory constructor
-  print(sylvie.age);
+  final cat1 = Cat("Nami");
+  final cat2 = Cat("Nami");
+
+  if(cat1==cat2){
+    print("Both cats are the same");
+  }
+  else{
+    print("Both cats are not the same");
+  }
 }
 
 
