@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
 
-//Inheritance in dart
-class Animals{
+//abstract classes
+abstract class Animals{
   void walk(){
     print("Hey I'm walking paw paw paw");
   }
@@ -15,6 +15,9 @@ class Animals{
 class Cat extends Animals{}
 
 void test(){
+  //final lion = Animals(); abstract classes cannot be instantiated
+  //abstract classes are used for the sole purpose of other classes using it's
+  //functionalities or properties
   final sylvie = Cat();
   sylvie.walk();
   sylvie.eat();
