@@ -1,27 +1,23 @@
 
 import 'package:flutter/material.dart';
 
-//abstract classes
-abstract class Animals{
-  void walk(){
-    print("Hey I'm walking paw paw paw");
-  }
+//Factory constructors
 
-  void eat(){
-    print("Hey I'm eating nom nom nom");
+
+
+class Cat{
+  final int age;
+  Cat(this.age);
+  factory Cat.age(){//factory constructor that returns the age of the cat-
+    return Cat(8);//as an object.
   }
 }
 
-class Cat extends Animals{}
 
 void test(){
-  //final lion = Animals(); abstract classes cannot be instantiated
-  //abstract classes are used for the sole purpose of other classes using it's
-  //functionalities or properties
-  final sylvie = Cat();
-  sylvie.walk();
-  sylvie.eat();
   
+  final sylvie = Cat.age();//using the factory constructor
+  print(sylvie.age);
 }
 
 
