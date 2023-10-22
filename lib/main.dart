@@ -3,25 +3,27 @@ import 'package:flutter/material.dart';
 
 
 
-//Operators not working at class level
+//Advanced Dart - Extensions
 
 class Cat{
-  final String name;
-  Cat(this.name);
+  final int age;
+  Cat(this.age);
+}
+
+extension Run on Cat{
+  void run(){
+    print("Cat $age is running");
+  }
 }
 
 
 void test(){
   
-  final cat1 = Cat("Nami");
-  final cat2 = Cat("Nami");
+  final cat1 = Cat(18);
+  final cat2 = Cat(17);
+  cat1.run();
+  cat2.run();
 
-  if(cat1==cat2){
-    print("Both cats are the same");
-  }
-  else{
-    print("Both cats are not the same");
-  }
 }
 
 
