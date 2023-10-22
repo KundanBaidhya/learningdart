@@ -4,6 +4,18 @@ import 'package:flutter/material.dart';
 
 
 //Advanced Dart - Extensions
+class Person{
+  String firstName;
+  String lastName;
+
+  Person(this.firstName, this.lastName);
+}
+
+extension Fullname on Person{
+  void fullName(){
+    print("Hi my name is $firstName $lastName");
+  }
+}
 
 class Cat{
   final int age;
@@ -23,6 +35,8 @@ void test(){
   final cat2 = Cat(17);
   cat1.run();
   cat2.run();
+  final person1 = Person("Kundan","Baidhya");
+  person1.fullName();
 
 }
 
